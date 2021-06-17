@@ -273,25 +273,42 @@ nav{
 }
 
 .howitworks-sec{
-    border: 1px solid #fff;
-    margin: 1em 1em;
+    background-color: rgba(20, 50, 99, 0.05);
+    padding-top: 4em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
     text-align: center;
+    display: flex;
+    width: 20em;
+    height: 15em;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+.howitworks-section{
+    display: flex;
+    justify-items: flex-start;
 }
 
 .howitworks-icon{
-    font-size: 4rem;
+    font-size: 2.8rem;
     color: rgb(20, 50, 99);
 }
+
+.howitworks-info{
+    text-align: left;
+    margin-left: 1.3em;
+}
+
 .howitworks-sec-heading{
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-top: 1em;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .howitworks-sec-para{
     color: rgb(77, 77, 77);
     font-size: 0.9rem;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .homeTypes{
@@ -387,7 +404,7 @@ nav{
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
-    background-color: rgba(20, 50, 99, 0.1);
+    background-color: rgba(20, 50, 99, 0.05);
     padding: 6em 4em 2em 4em;
 }
 
