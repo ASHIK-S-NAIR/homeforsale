@@ -1,48 +1,21 @@
-/* body{
-    background-color: #045de9;
-    background-image: linear-gradient(315deg, #09c6f9 0%, #045de9 70%); 
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-*{
+*,*::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Nunito', sans-serif; */
 }
 
 .hero{
-    /* background-image: linear-gradient(315deg, rgba(9,198,249,0.2) 0%, rgba(4, 87, 220, 0.8)  70%), url(./images/bg.jpg); */
-    /* background-image: linear-gradient(to right, rgba(4, 87, 220,0.1), rgba(4, 874, 220,0.1)), url(./images/bg.jpg); */
-    /* background: rgba(255,255,255,0.1),url(./images/bg.jpg); */
-    background: url(./images/bg.jpg);
+    background: rgb(252, 249, 244);
     position: relative;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
     overflow: hidden;
     color: #fff;
-    /* margin-bottom: 8em; */
-}
-
-.overlay{
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    opacity: 0.75;
-    position: absolute;
-}
-
-.bottomlay{
-    background: linear-gradient(180deg, transparent, #fff);
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.75; */
-    position: absolute;
+    padding-bottom: 8em;
 }
 
 nav{
@@ -57,15 +30,11 @@ nav{
     height: 2.5em;
     margin: 0 auto;
     color: rgb(20, 50, 99);
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-radius: 1em; */
-    /* text-shadow: 0px 1px #212121; */
     font-size: 1.1rem;
     padding-bottom: 1em;
-    border-bottom: 1px solid rgb(20, 50, 99);
 }
 
 .nav-items{
@@ -91,60 +60,79 @@ nav{
 }
 
 .hero-main{
-    width: 80%;
+    width: 100%;
+    padding-top: 2em;
     height: auto;
-    /* margin: 8em auto; */
-    margin-top: 7em;
+    display: flex;
     text-align: left;
 }
 
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .hero-header{
-    font-size: 5rem;
-    font-weight: 800;
-    /* text-shadow: 0px 2px 5px#6b6b6b; */
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 500;
     color: rgb(20, 50, 99);
     margin-top: -0.3em;
-    letter-spacing: 1px;
-    line-height: 1em;
-    margin-bottom: 0.15em;
+    line-height: 6rem;
+    margin-bottom: 0.45em;
 }
 
 .hero-secondary{
     font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 2.5em;
+    line-height: 2rem;
+    width: 90%;
+    font-weight: 400;
+    margin-bottom: 4em;
     color: rgb(20, 50, 99);
 }
 
-.hero-btn{
-    padding: 0.6em 4em;
-    font-weight: 800;
-    background-color: #ff2010;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-shadow: 0px 2px 15px 0px #2b2b2b;
-    transition: 0.3s;
+.hero-secondary span{
+    font-size: 1.4rem;
+    font-weight: 1000;
 }
 
-.hero-btn:hover{
-    cursor: pointer;
-    background-color: #e62012;
+.hero-bg-section{
+    height: 100%;
+    position: relative;
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.2);
+}
+
+.hero-bg-section::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254,186,86, 0.8);
+    z-index: -1;
+    transform: translate(3em, 3em);
+}
+
+.hero-bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .search{
     position: relative;
     z-index: 1;
-    width: 50%;
-    margin: 0 auto;
-    height: 60px;
+    width: 90%;
+    height: auto;
     box-shadow: 0px 3px 20px 0px #919191;
     background: transparent;
+    border: none;
     border-radius: 5px 5px 5px 5px; 
-    margin-top: -2em;
-    margin-bottom: 8em;
 }
 
 
@@ -152,15 +140,15 @@ nav{
     position: absolute;
     top: 0;
     width: 70%;
-    height: 60px;
+    height: auto;
     outline: none; 
     border: none;
     border-radius: 5px 0 0 5px;
-    border-left: 1px solid #919191;
-    border-top: 1px solid #919191;
-    border-bottom: 1px solid #919191;
-    font-size: 1.5rem;
-    padding-left: 1em;
+    color: rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    border-left: 1px solid rgba(0,0,0,0.6);
+    font-size: 1rem;
+    padding: 0.8em;
 }
 
 
@@ -169,12 +157,12 @@ nav{
     top: 0;
     right: 0;
     width: 30%;
-    height: 60px;
+    padding: 0.8em;
     border: none;
     outline: none;
-    font-weight: 800;
-    background-color: #ff2010;
-    color: #fff;
+    font-weight: 500;
+    background-image: linear-gradient( to right, rgb(220, 162, 75),  rgb(254,186,86));
+    color: #000;
     border-radius: 0 5px 5px 0;
     font-size: 1rem;
     transition: 0.3s;
@@ -182,12 +170,13 @@ nav{
 
 .search-btn:hover{
     cursor: pointer;
-    background-color: #e62012;
+    background-image: linear-gradient( to right, rgb(254,186,86), rgb(220, 162, 75));
 }
 
 .attract{
     width: 100%;
     margin-bottom: 10em;
+    margin-top: 8em;
 }
 
 .attract-wrap{
@@ -532,16 +521,17 @@ nav{
 .contact-btn{
     height: 3.5em;
     width: 8em;
-    background-color: #ff2010;
+    background-image: linear-gradient( to right, rgb(220, 162, 75),  rgb(254,186,86));
     border: none;
-    color: #fff;
+    color: #000;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 800;
+    transition: 0.3s;
 }
 
 .contact-btn:hover{
-    background-color: #e62012;
+    background-image: linear-gradient( to right, rgb(254,186,86), rgb(220, 162, 75));
     cursor: pointer;
 }
 
@@ -573,8 +563,8 @@ nav{
 
 .contactUs-btn-btn:hover{
     cursor: pointer;
-    background-color: #e62012;
-    border-color: #e62012;
+    background-image: linear-gradient( to right, rgb(220, 162, 75),  rgb(254,186,86));
+    border-color: rgb(254,186,86);
     box-shadow: 0px 2px 15px 0px #2b2b2b;  
 }
 
@@ -602,7 +592,7 @@ nav{
 }
 
 .contactUs-social-icon:hover{
-    color: #e62012;
+    color: rgb(254,186,86);
     transition: 0.3s;
     cursor: pointer;
     box-shadow: 0px 2px 15px 0px #2b2b2b;
