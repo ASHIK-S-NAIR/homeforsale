@@ -327,7 +327,7 @@ nav{
 }
 
 .homeType-li{
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     width: 100%;
 }
 
@@ -338,8 +338,11 @@ nav{
 
 .homeType{
     display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: rgba(254,186,86, 0.15);
+    grid-template-columns: 70% 30%;
+}
+
+.homeType-li:nth-of-type(even) .homeType{
+    grid-template-columns: 30% 70%;
 }
 
 .type-img{
@@ -349,25 +352,32 @@ nav{
 }
 
 .type-info{
-    padding: 3em 3em;
+    padding-left: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
+}
+
+.homeType-li:nth-of-type(even) .type-info{
+    padding-right: 2em;
+    padding-left: 0;
+    /* background-color: red; */
 }
 
 .type-header{
     font-family: 'Rajdhani', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1em;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.1em;
     font-weight: 500;
+    
 }
 
 .type-para{
     font-size: 0.9rem;
-    line-height: 1.8em;
-    margin-bottom: 2em;
+    line-height: 1.7em;
+    margin-bottom: 1em;
     color: #434242;
 }
 
@@ -378,9 +388,9 @@ nav{
 }
 
 .type-price-val{
-    font-size: 2.5rem;
-    margin-bottom: 1em;
-    font-weight: 200;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+    font-weight: 500;
 }
 
 .type-btn{
@@ -394,6 +404,7 @@ nav{
     font-weight: 600;
     border: 1px solid rgb(20, 50, 99);
     background-color: transparent;
+    /* margin-bottom: 1em; */
     transition: 0.3s;
 }
 
