@@ -311,13 +311,31 @@ nav{
     text-align: center;
     display: flex;
     justify-items: center;
-    padding: 1.5em;
 }
 
 .howitworks-section{
     display: flex;
     justify-items: center;
     align-items: center;
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    position: relative;
+}
+
+.howitworks-section::before{
+    position: absolute;
+    content: attr(title);
+    display: block;
+    top: 0;
+    left: 50%;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5em;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgb(0,0,255);
 }
 
 .howitworks-icon{
