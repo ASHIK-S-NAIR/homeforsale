@@ -35,18 +35,46 @@ button{
 /* hero section starts */
 
 .hero{
-    background: rgb(252, 249, 244);
+    background-color: rgb(247, 222, 187);
     position: relative;
-    overflow: hidden;
     color: #fff;
     padding-bottom: 8em;
+}
+
+.hero-section-bg{
+    position: absolute;
+    top: -50px;
+    right: -200px;
+    /* height: 150%; */
+    width: 100%;
+    transform: rotate(-80deg);
+    /* border: 1px solid green; */
+}
+
+.hero-section-dots1{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: 15%;
+    /* border: 1px solid red; */
+    /* height: 200px; */
+}
+
+.hero-section-dots2{
+    position: absolute;
+    top: 20%;
+    right: -5%;
+    width: 8%;
+    transform:rotate(90deg);
+    /* border: 1px solid red; */
+    /* height: 200px; */
 }
 
 /* nav section starts */
 
 nav{
     width: 100%;
-    margin-top: 2em;
+    padding-top: 2em;
     position: relative;
     z-index: 10;
 }
@@ -86,6 +114,7 @@ nav{
     margin: 0 auto;
     position: relative;
     z-index: 10;
+    /* border: 1px solid green; */
 }
 
 .hero-main{
@@ -95,27 +124,29 @@ nav{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
+    /* border: 1px solid red; */
 }
 
 .hero-info{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
+    z-index: 10;
 }
 
 .hero-header{
-    font-size: 4.5rem;
-    font-weight: 500;
+    font-size: 6.1rem;
+    font-weight: 100;
     color: rgb(20, 50, 99);
     margin-top: -0.3em;
-    line-height: 5rem;
-    margin-bottom: 0.45em;
+    line-height: 7rem;
+    margin-bottom: 0.2em;
 }
 
 .hero-secondary{
-    font-size: 1rem;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
     width: 90%;
     font-weight: 400;
     margin-bottom: 4em;
@@ -142,7 +173,7 @@ nav{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(254,186,86, 0.8);
+    /* background-color: rgba(254,186,86, 0.8); */
     z-index: -1;
     transform: translate(2em, 2em);
 }
