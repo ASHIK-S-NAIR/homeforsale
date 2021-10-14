@@ -2049,7 +2049,7 @@ nav {
 
 .nav-container {
   width: 90%;
-  height: 3em;
+  height: 5em;
   /* margin: 0 auto; */
   /* color: var(--text-color); */
   /* display: flex; */
@@ -2058,6 +2058,12 @@ nav {
   /* font-size: 1.1rem; */
   padding-bottom: 0em;
   /* z-index: 10; */
+  /* border: 1px solid red; */
+}
+
+.logo{
+  color: #fff;
+  font-size: 1.3rem;
 }
 
 .nav-sec{
@@ -2100,6 +2106,39 @@ nav {
 
 .nav-items:hover .nav-item-a {
   color: var(--main-color);
+}
+
+.nav-toggle-section{
+  width: 3.5em;
+  height: 3.5em;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-toggle-section::before,
+.nav-toggle-section::after{
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-toggle-section::before{
+  top: 30%;
+}
+
+.nav-toggle-section::after{
+  bottom: 30%;
+}
+
+.nav-toggle-section .active{
+  transform: rotate(90deg);
 }
 
 /* nav section ends */
