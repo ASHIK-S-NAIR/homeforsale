@@ -971,6 +971,17 @@ nav {
 
 /* footer section ends */
 
+
+/* big screen starts */
+
+@media screen and (min-width: 1366px){
+  :root{
+    --max-width: 1300px;
+  }
+}
+
+/* big screen ends */
+
 /* tablet screen starts */
 
 
