@@ -1004,7 +1004,6 @@ nav {
 
 .nav-container {
   width: var(--max-width);
-  border: 1px solid black;
   height: 2em;
   font-size: 1rem;
   padding-bottom: 0;
@@ -1012,7 +1011,6 @@ nav {
 }
 
 .nav-sec{
-  border: 1px solid pink;
   margin: none;
 }
 
