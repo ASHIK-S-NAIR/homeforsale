@@ -974,7 +974,7 @@ nav {
 
 /* big screen starts */
 
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1367px){
   :root{
     --max-width: 1300px;
   }
