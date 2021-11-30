@@ -9,7 +9,7 @@
   --text-color: #262626;
   --secondary-color: #470441;
   --main-color: #f7f5c9;
-  --max-width: 80%;
+  --max-width: min(80%, 1300px);
 }
 
 *,
@@ -970,17 +970,6 @@ nav {
 }
 
 /* footer section ends */
-
-
-/* big screen starts */
-
-@media screen and (min-width: 1367px){
-  :root{
-    --max-width: 1300px;
-  }
-}
-
-/* big screen ends */
 
 /* tablet screen starts */
 
